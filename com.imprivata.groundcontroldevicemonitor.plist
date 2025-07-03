@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.imprivata.groundcontroldevicemonitor</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/yourusername/scripts/Imprivata_FailedDevice_Monitor/Imprivata_FailedDevice_Monitor.sh</string>
+    </array>
+
+    <!-- Run at user login -->
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- Repeat every 4 hours (14400 seconds) -->
+    <key>StartInterval</key>
+    <integer>14400</integer>
+
+    <!-- Log output to files -->
+    <key>StandardOutPath</key>
+    <string>/Users/yourusername/scripts/Imprivata_FailedDevice_Monitor/Imprivata_FailedDevice_Monitor.out</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/yourusername/scripts/Imprivata_FailedDevice_Monitor/Imprivata_FailedDevice_Monitor.err</string>
+</dict>
+</plist>
